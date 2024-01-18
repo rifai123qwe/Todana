@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Barang</title>
+    <style>
+        /* Style for the form */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.image-container {
+     text-align: center;
+       }
+
+       .image-container img {
+        max-width: 850px;
+        height: 58svh;
+        border-radius: 15px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+       }
+
+h2 {
+    color: #333;
+}
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #d17c7c;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="number"],
+textarea,
+input[type="date"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Additional styles can be added as needed */
+
+    </style>
+</head>
+<body>
+
+<h2>EXPO 3110 3 PINTU</h2>
+<div class="image-container">
+    <img src="images/Expo 3110 3 Pintu.jpeg" alt="Deskripsi">
+</div>
+
+
+<form action="proses_pemesanan.php" method="post">
+    <label for="namaPelanggan">Nama Pelanggan:</label>
+    <input type="text" id="namaPelanggan" name="namaPelanggan" required><br><br>
+
+    <label for="alamatPelanggan">Alamat Pelanggan:</label>
+    <textarea id="alamatPelanggan" name="alamatPelanggan" rows="4" required></textarea><br><br>
+
+    <label for="teleponPelanggan">Nomor Telepon:</label>
+    <input type="tel" id="teleponPelanggan" name="teleponPelanggan" required><br><br>
+
+    <label for="namaBarang">Nama Barang:</label>
+    <input type="text" id="namaBarang" name="namaBarang" required><br><br>
+
+    <label for="hargaBarang">Harga Barang:</label>
+    <input type="number" id="hargaBarang" name="hargaBarang" required><br><br>
+
+    <label for="jumlahBarang">Jumlah Barang:</label>
+    <input type="number" id="jumlahBarang" name="jumlahBarang" required><br><br>
+
+    <label for="tanggalPemesanan">Tanggal Pemesanan:</label>
+    <input type="date" id="tanggalPemesanan" name="tanggalPemesanan" required><br><br>
+
+    <input type="submit" value="Pesan">
+</form>
+
+</body>
+</html>
